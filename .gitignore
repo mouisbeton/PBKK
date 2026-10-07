@@ -1,0 +1,10 @@
+# Artefak build .NET
+**/bin/
+**/obj/
+
+# Bahan riset dan salinan publikasi lokal
+/research/
+/pertemuan-*/blog*.html
+/pertemuan-*/blogger-post.json
+/pertemuan-*/published-page.html
+/pertemuan-*/*.zip
