@@ -1,10 +1,18 @@
-# Artefak build .NET
+# Repository hanya menyimpan kode sumber dan file project .NET.
+*
+!*/
+!*.cs
+!*.csproj
+!*.sln
+!*.slnx
+!*.xaml
+!*.axaml
+!*.resx
+!*.props
+!*.targets
+!/.gitignore
+
+# Artefak build dan riset tetap lokal.
 **/bin/
 **/obj/
-
-# Bahan riset dan salinan publikasi lokal
 /research/
-/pertemuan-*/blog*.html
-/pertemuan-*/blogger-post.json
-/pertemuan-*/published-page.html
-/pertemuan-*/*.zip
