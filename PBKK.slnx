@@ -1,0 +1,19 @@
+<Solution>
+  <Folder Name="/Pertemuan 2/">
+    <Project Path="pertemuan-2/HelloDotNet/HelloDotNet.csproj" />
+    <Project Path="pertemuan-2/DataMahasiswa/DataMahasiswa.csproj" />
+  </Folder>
+  <Folder Name="/Pertemuan 3/">
+    <Project Path="pertemuan-3/CalculatorApp/CalculatorApp.csproj" />
+  </Folder>
+  <Folder Name="/Pertemuan 4/">
+    <Project Path="pertemuan-4/Registration.Core/Registration.Core.csproj" />
+    <Project Path="pertemuan-4/Registration.Wpf/Registration.Wpf.csproj" />
+    <Project Path="pertemuan-4/Registration.Avalonia/Registration.Avalonia.csproj" />
+  </Folder>
+  <Folder Name="/Pertemuan 5/">
+    <Project Path="pertemuan-5/StudentManagement.Core/StudentManagement.Core.csproj" />
+    <Project Path="pertemuan-5/StudentManagement.Wpf/StudentManagement.Wpf.csproj" />
+    <Project Path="pertemuan-5/StudentManagement.Avalonia/StudentManagement.Avalonia.csproj" />
+  </Folder>
+</Solution>

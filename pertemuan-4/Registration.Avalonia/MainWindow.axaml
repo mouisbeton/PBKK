@@ -1,0 +1,21 @@
+<Window x:Class="Registration.Avalonia.MainWindow" xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Pendaftaran Mahasiswa" Width="1060" Height="690" WindowStartupLocation="CenterScreen" Background="#F1F5F9">
+<Grid Margin="28">
+<Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+<StackPanel><TextBlock Text="PENDAFTARAN MAHASISWA" FontSize="27" FontWeight="Bold" Foreground="#0F172A"/><TextBlock Text="PBKK Pertemuan 4 | Form dan pengelolaan data dalam memori" Foreground="#475569" Margin="0,8,0,24"/></StackPanel>
+<Grid Grid.Row="1"><Grid.ColumnDefinitions><ColumnDefinition Width="350"/><ColumnDefinition Width="28"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+<Border Background="White" Padding="22" CornerRadius="8"><StackPanel>
+<TextBlock Text="FORM PENDAFTARAN" FontWeight="Bold" FontSize="18" Margin="0,0,0,20"/>
+<TextBlock Text="NIM"/><TextBox x:Name="txtNim" Height="36" Margin="0,6,0,18"/>
+<TextBlock Text="Nama mahasiswa"/><TextBox x:Name="txtNama" Height="36" Margin="0,6,0,18"/>
+<TextBlock Text="Program studi"/><ComboBox x:Name="cmbProdi" Height="36" HorizontalAlignment="Stretch" Margin="0,6,0,18"/>
+<TextBlock Text="Jenis kelamin"/><StackPanel Orientation="Horizontal" Margin="0,10,0,24"><RadioButton x:Name="rbLaki" GroupName="gender" Content="Laki-laki" Margin="0,0,18,0"/><RadioButton x:Name="rbPerempuan" GroupName="gender" Content="Perempuan"/></StackPanel>
+<StackPanel Orientation="Horizontal"><Button x:Name="btnSimpan" Content="Simpan" Width="140" Height="40" Click="Save_Click" Background="#2563EB" Foreground="White" Margin="0,0,12,0"/><Button x:Name="btnReset" Content="Reset" Width="130" Height="40" Click="Reset_Click"/></StackPanel>
+</StackPanel></Border>
+<Border Grid.Column="2" Background="White" Padding="20" CornerRadius="8"><Grid><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+<TextBlock Text="DATA MAHASISWA" FontSize="18" FontWeight="Bold" Margin="0,0,0,18"/>
+<ListBox x:Name="lstMahasiswa" Grid.Row="1"/>
+<StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,16,0,0"><TextBlock x:Name="txtJumlah" Text="Jumlah mahasiswa: 0" VerticalAlignment="Center" Width="275"/><Button x:Name="btnHapus" Content="Hapus terpilih" Width="150" Height="40" Click="Delete_Click"/></StackPanel>
+<StackPanel x:Name="confirmPanel" Grid.Row="3" Margin="0,12,0,0"><TextBlock Text="Hapus mahasiswa yang dipilih?" Margin="0,0,0,8"/><StackPanel Orientation="Horizontal"><Button x:Name="btnKonfirmasi" Content="Ya, hapus" Width="120" Click="Confirm_Click" Margin="0,0,10,0"/><Button x:Name="btnBatal" Content="Batal" Width="100" Click="Cancel_Click"/></StackPanel></StackPanel>
+</Grid></Border></Grid>
+<TextBlock x:Name="txtStatus" Grid.Row="2" Text="Siap menerima pendaftaran." Margin="0,18,0,0" Foreground="#1E40AF" TextWrapping="Wrap"/>
+</Grid></Window>
